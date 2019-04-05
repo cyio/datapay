@@ -61,7 +61,7 @@ var build = function(options, callback) {
       if (options.pay && options.pay.fee) {
         tx.fee(options.pay.fee)
       } else {
-        var estSize=Math.ceil(tx._estimateSize()*1.4);
+        var estSize=Math.ceil(tx._estimateSize()*1);
         tx.fee(estSize);
       }
 
